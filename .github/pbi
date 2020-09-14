@@ -1,0 +1,12 @@
+var models = window['powerbi-client'].models;
+
+var embedConfiguration = {
+	type: 'report',
+	id: '5dac7a4a-4452-46b3-99f6-a25915e0fe55',
+	embedUrl: 'https://app.powerbi.com/reportEmbed',
+	tokenType: models.TokenType.Aad,
+	accessToken: 'e4...rf'
+};
+
+var $reportContainer = $('#reportContainer');
+var report = powerbi.embed($reportContainer.get(0), embedConfiguration);
